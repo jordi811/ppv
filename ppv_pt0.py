@@ -30,7 +30,7 @@ with col_left:
     st.markdown("## 🎮 遊び方")
     st.markdown("""
     - お題ベクトル **v** が表示されます  
-    - 10秒以内に3つの整数を選んで **x** を作ろう  
+    - 100秒以内に3つの整数を選んで **x** を作ろう  
     - スコアは  
       \n|v|² - |v·x|  
     - 6ラウンド勝負！
@@ -119,4 +119,5 @@ if st.session_state.round > st.session_state.total_rounds:
         st.balloons()
     else:
         st.info("残念！また挑戦してね！")
+
 
