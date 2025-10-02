@@ -23,7 +23,7 @@ def new_round():
     st.session_state.start_time = time.time()
 
 # ====== レイアウト分割 ======
-col_left, col_center, col_right = st.columns([1, 2, 1])
+col_left, col_center, col_right = st.columns([2, 3, 2])
 
 # --- 左（ルール表示） ---
 with col_left:
@@ -119,5 +119,6 @@ if st.session_state.round > st.session_state.total_rounds:
         st.balloons()
     else:
         st.info("残念！また挑戦してね！")
+
 
 
