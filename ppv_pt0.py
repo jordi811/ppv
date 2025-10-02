@@ -49,7 +49,7 @@ with col_center:
 
         # タイマー
         elapsed = int(time.time() - st.session_state.start_time)
-        remaining = max(0, 10 - elapsed)
+        remaining = max(0, 100 - elapsed)
         st.markdown(f"⏱️ 残り時間: **{remaining}秒**")
         if remaining == 0 and st.session_state.round_active:
             # タイムアウトで次へ
@@ -119,3 +119,4 @@ if st.session_state.round > st.session_state.total_rounds:
         st.balloons()
     else:
         st.info("残念！また挑戦してね！")
+
